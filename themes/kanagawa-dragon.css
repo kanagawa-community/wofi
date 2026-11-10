@@ -1,0 +1,41 @@
+/* Kanagawa Dragon */
+/* https://github.com/kanagawa-community/wofi */
+
+@define-color kanagawa_bg #0d0c0c;
+@define-color kanagawa_fg #c8c093;
+@define-color kanagawa_border #54546d;
+@define-color kanagawa_input_bg #282727;
+@define-color kanagawa_input_fg #c5c9c5;
+@define-color kanagawa_selected_bg #2d4f67;
+@define-color kanagawa_selected_fg #dcd7ba;
+@define-color kanagawa_match #8ba4b0;
+
+window {
+  background-color: @kanagawa_bg;
+  border: 1px solid @kanagawa_border;
+}
+
+#input {
+  color: @kanagawa_input_fg;
+  background-color: @kanagawa_input_bg;
+  border: none;
+}
+
+#inner-box,
+#outer-box,
+#scroll,
+#entry {
+  background-color: @kanagawa_bg;
+}
+
+#text {
+  color: @kanagawa_fg;
+}
+
+#entry:selected {
+  background-color: @kanagawa_selected_bg;
+}
+
+#entry:selected #text {
+  color: @kanagawa_selected_fg;
+}

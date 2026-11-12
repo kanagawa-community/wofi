@@ -1,0 +1,41 @@
+/* Kanagawa Lotus */
+/* https://github.com/kanagawa-community/wofi */
+
+@define-color kanagawa_bg #d5cea3;
+@define-color kanagawa_fg #43436c;
+@define-color kanagawa_border #716e61;
+@define-color kanagawa_input_bg #e7dba0;
+@define-color kanagawa_input_fg #545464;
+@define-color kanagawa_selected_bg #9fb5c9;
+@define-color kanagawa_selected_fg #43436c;
+@define-color kanagawa_match #4d699b;
+
+window {
+  background-color: @kanagawa_bg;
+  border: 1px solid @kanagawa_border;
+}
+
+#input {
+  color: @kanagawa_input_fg;
+  background-color: @kanagawa_input_bg;
+  border: none;
+}
+
+#inner-box,
+#outer-box,
+#scroll,
+#entry {
+  background-color: @kanagawa_bg;
+}
+
+#text {
+  color: @kanagawa_fg;
+}
+
+#entry:selected {
+  background-color: @kanagawa_selected_bg;
+}
+
+#entry:selected #text {
+  color: @kanagawa_selected_fg;
+}
